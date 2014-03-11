@@ -61,9 +61,6 @@ if (!is_object($modx) || !($modx instanceof modX)) {
     exit();
 }
 
-/* Enable debugging */
-$modx->setDebug(true);
-
 /* Set the actual start time */
 $modx->startTime= $tstart;
 
