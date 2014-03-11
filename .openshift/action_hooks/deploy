@@ -1,0 +1,6 @@
+#!/usr/env bash
+
+if [[ ! -f ${OPENSHIFT_DATA_DIR}/.deployed ]]; then
+    mysql -u ${OPENSHIFT_MYSQL_DB_USER} -p ${OPENSHIFT_MYSQL_DB_PASSWORD} -h ${OPENSHIFT_MYSQL_DB_HOST} ${OPENSHIFT_APP_NAME} < ${OPENSHIFT_REPO_DIR}.openshift/modx.sql
+    touch ${OPENSHIFT_DATA_DIR}/.deployed
+fi
