@@ -3,8 +3,7 @@ ModX on OpenShift
 
 This Git repository helps you get up and running quickly w/ a ModX
 installation on OpenShift. It defaults to using MySQL, so when creating
-the application you'll want to select and install MySQL
-(for running scheduled tasks).
+the application you'll want to select and install MySQL.
 
     rhc app create modx php-5.4 mysql-5.5
 
